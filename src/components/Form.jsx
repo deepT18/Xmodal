@@ -146,22 +146,22 @@ export default function Form({ handleClose }) {
       }}>
         <form onSubmit={validationChecks}>
           <h2>Fill Details</h2>
-          <div className="userName">
+          <>
             <label htmlFor="username"><strong>Username:</strong></label>
             <input id="username" onChange={(e) => setFormData({ ...formData, name: e.target.value })} value={formData.name} name="username" />
-          </div>
-          <div className="email">
-            <label htmlFor="email"><strong>Email:</strong></label>
+          </>
+          <>
+            <label htmlFor="email"><strong>Email Address:</strong></label>
             <input id="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} value={formData.email} name="email" />
-          </div>
-          <div className="phone">
-            <label htmlFor="phone"><strong>Number:</strong></label>
+          </>
+          <>
+            <label htmlFor="phone"><strong>Phone Number:</strong></label>
             <input id="phone" onChange={(e) => setFormData({ ...formData, number: e.target.value })} value={formData.number} name="phone" />
-          </div>
-          <div classname="dob">
+          </>
+          <>
             <label htmlFor="dob"><strong>Date of Birth:</strong></label>
             <input id="dob" onChange={(e) => setFormData({ ...formData, dob: e.target.value })} value={formData.dob} name="dob" type="date" />
-          </div>
+          </>
           <button className="btn" type="submit">Submit</button>
         </form>
       </div>
