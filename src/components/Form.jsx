@@ -148,19 +148,19 @@ export default function Form({ handleClose }) {
           <h2>Fill Details</h2>
           <>
             <label htmlFor="username"><strong>Username:</strong></label>
-            <input id="username" onChange={(e) => setFormData({ ...formData, name: e.target.value })} value={formData.name} name="username" />
+            <input type="username" placeholder="username" id="username" onChange={(e) => setFormData({ ...formData, name: e.target.value })} value={formData.name} name="username" />
           </>
           <>
             <label htmlFor="email"><strong>Email Address:</strong></label>
-            <input id="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} value={formData.email} name="email" />
+            <input type="email" id="email" placeholder="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} value={formData.email} name="email" />
           </>
           <>
             <label htmlFor="phone"><strong>Phone Number:</strong></label>
-            <input id="phone" onChange={(e) => setFormData({ ...formData, number: e.target.value })} value={formData.number} name="phone" />
+            <input type="phone" id="phone" placeholder="tel" onChange={(e) => setFormData({ ...formData, number: e.target.value })} value={formData.number} name="phone" />
           </>
           <>
             <label htmlFor="dob"><strong>Date of Birth:</strong></label>
-            <input id="dob" onChange={(e) => setFormData({ ...formData, dob: e.target.value })} value={formData.dob} name="dob" type="date" />
+            <input id="dob" type="dob" placeholder="dob" onChange={(e) => setFormData({ ...formData, dob: e.target.value })} value={formData.dob} name="dob" type="date" />
           </>
           <button className="btn" type="submit">Submit</button>
         </form>
