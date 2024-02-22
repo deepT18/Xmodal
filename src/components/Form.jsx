@@ -53,8 +53,8 @@ export default function Form({ handleClose }) {
   };
 
   return (
-    <div className="container" onClick={handling}>
-      <div className="body" onClick={(e) => {
+    <div className="modal" onClick={handling}>
+      <div className="modal-content" onClick={(e) => {
         e.stopPropagation();
       }}>
         <form onSubmit={validationChecks}>
