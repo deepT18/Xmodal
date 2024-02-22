@@ -30,7 +30,7 @@ const handleClose=()=>{
 }
   
   return (
-    <div style={{textAlign:'center'}} className={modalBg}>
+    <div style={{modalBg}} className="main-page-container">
       <h1>User Details Modal</h1>
       <button onClick={handleChange} style={{border:"none",height:"40px",width:"100px",backgroundColor:"blue",color:"white",borderRadius:"5px"}}>Open Form</button>
       <div className="xmodal">
