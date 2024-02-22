@@ -162,7 +162,7 @@ export default function Form({ handleClose }) {
             <label htmlFor="dob"><strong>Date of Birth:</strong></label>
             <input id="dob" type="dob" placeholder="dob" onChange={(e) => setFormData({ ...formData, dob: e.target.value })} value={formData.dob} name="dob" type="date" />
           </>
-          <button className="btn" type="submit">Submit</button>
+          <button className="submit-button" type="submit">Submit</button>
         </form>
       </div>
     </div>
